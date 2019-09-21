@@ -1,0 +1,8 @@
+m = []
+c = int(input())
+while c != 0:
+    m.append(c)
+    c = int(input())
+for i in range(len(m)):
+    if i % 2 == 0:
+        print(m[i])
