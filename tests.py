@@ -1,3 +1,4 @@
-text = 'MIPT Students'
-n = 5
-print ('Hello, ' + ('{}, '.format(text))*(n-1) + '{}'.format(text))
+n = 234
+a = n//60
+b = n-a*60
+print(a, "час", b,"мин")
