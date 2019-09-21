@@ -1,4 +1,4 @@
-n = input()
+n = int(input())
 x = 1
 b = ''
 a = ''

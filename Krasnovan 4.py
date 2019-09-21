@@ -1,5 +1,5 @@
-u = input()
-t = input()
+u = int(input())
+t = int(input())
 x = u * t
 while x < 0:
     x += 109
