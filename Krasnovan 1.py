@@ -8,4 +8,4 @@ while x > 59:
     x -= 60
     y += 1
 else:
-    print('y, x')
+    print(y, x)
