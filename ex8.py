@@ -1,4 +1,5 @@
-a = [1, 6, 67, 8, 24, 0]
-for i in range(len(a)):
-    if a[i] % 2 == 0:
-        print(a[i])
+import turtle
+turtle.shape('turtle')
+for i in range(1, 1000):
+    turtle.forward(i*3)
+    turtle.left(90)

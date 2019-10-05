@@ -1,9 +1,21 @@
-x1 = float(input("Координата первой точки по оси абцисс: "))
-x2 = float(input("Координата второй точки по оси абцисс: "))
-y1 = float(input("Координата первой точки по оси ординат: "))
-y2 = float(input("Координата второй точки по оси ординат: "))
-def distance(x1, x2, y1, y2):
-    result = ((x1-x2)**2 + (y1-y2)**2)**0.5
-    print(result)
-distance(x1, x2, y1, y2)
+import  turtle
+turtle.shape('turtle')
+def  geom(n):
+    turtle.left(180 - 180 * (n - 2) / n / 2)
+    for i in range(n):
+        turtle.forward(20*n)
+        turtle.left(180-180*(n-2)/n)
+    turtle.right(180 - 180 * (n - 2) / n / 2)
+
+
+for i in range(3, 13):
+    geom(i)
+    turtle.penup()
+    turtle.goto((i-2)*33, 0)
+    turtle.pendown()
+
+
+
+
+
 

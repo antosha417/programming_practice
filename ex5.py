@@ -1,7 +1,14 @@
-n = int(input("Число:"))
-sum = 0
-a = 1
-for i in range(1, n+1):
-    a *= i
-    sum += a
-print(sum)
+import  turtle
+turtle.shape("turtle")
+for i in range(10):
+    turtle.forward(30 + 2*i*10)
+    turtle.left(90)
+    turtle.forward(30 + 2*i*10)
+    turtle.left(90)
+    turtle.forward(30 + 2*i*10)
+    turtle.left(90)
+    turtle.forward(30 + 2*i*10)
+    turtle.left(90)
+    turtle.penup()
+    turtle.goto(-10-i*10,-10-i*10)
+    turtle.pendown()
