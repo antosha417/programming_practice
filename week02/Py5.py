@@ -7,4 +7,4 @@ def sum_factorials(n):
     print(sum)
 
 n=int(input())
-sum_factorials(n)
+sum_factorials(n
