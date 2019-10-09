@@ -1,7 +1,8 @@
 import turtle
 
-def draw_2circles(Nsteps):
-    step=5
+def draw_2circles(step):
+    step=10
+    Nsteps=30
     for i in range(Nsteps):
         turtle.forward(step)
         turtle.left(360/Nsteps)
@@ -9,9 +10,9 @@ def draw_2circles(Nsteps):
         turtle.forward(step)
         turtle.right(360 / Nsteps)
 
-N=50
+step=10
 nspirals=3
 angle=180/nspirals
 for i in range(nspirals):
-    draw_2circles(N)
+    draw_2circles(step)
     turtle.left(angle)
