@@ -1,10 +1,6 @@
 import turtle
 from math import sin, pi
 
-#def getR(st,Nst):
- #   R=st/2/sin(360/Nst*pi/180)
-  #  return R
-
 def draw_spiral(step,Nst,inc):
     angle=180-360/Nst
     for i in range(Nst):
