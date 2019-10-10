@@ -5,17 +5,20 @@ from math import sin, pi
  #   R=st/2/sin(360/Nst*pi/180)
   #  return R
 
-def draw_spiral(R):
-    Nsteps=36
-    angle=180-360/Nsteps
-    step=2*R*sin(360/Nsteps*pi/180)
-    for i in range(Nsteps):
+def draw_spiral(step,Nst,inc):
+    angle=180-360/Nst
+    for i in range(Nst):
         turtle.forward(step)
         turtle.left(180-angle)
-        step+=0.5
+        step+=inc
 
 
-nspirals=4
-r=10
+nspirals=10
+r=1
+Nsteps=36
+inc=0.05
+step=2*r*sin(360/Nsteps*pi/180)
+turtle.left(90)
 for i in range(nspirals):
-    draw_spiral(r)
+    draw_spiral(step,Nsteps,inc)
+    step+=inc*Nsteps
