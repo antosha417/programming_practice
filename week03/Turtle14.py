@@ -6,7 +6,15 @@ def draw_star(N,a):
         turtle.right(720/N)
 
 
-n=5
+n=6
 a=100
-turtle.left(180-540/n)
+dangle=180-540/n #угол-поправка на направление черчения
+turtle.left(dangle)
 draw_star(n,a)
+#turtle.penup()
+#turtle.right(dangle)
+#turtle.forward(2*a)
+#n=11
+#turtle.left(dangle)
+#turtle.pendown()
+#draw_star(n,a)
