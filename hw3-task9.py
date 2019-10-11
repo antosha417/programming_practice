@@ -2,11 +2,11 @@
 if __name__ == '__main__':
     import turtle
     turtle.shape('turtle')
-    def prmn(n, dlina):
+    def f(n, dlina):
         sumAngle = 180*(n-2)
         Angle = sumAngle/n
         for i in range(n):
             turtle.forward(100)
             turtle.left(180 - Angle)
     for i in range(3, 11):
-        prmn(i, 50)
+        f(i, 50)
