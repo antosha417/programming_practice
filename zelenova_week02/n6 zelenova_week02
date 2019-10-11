@@ -1,0 +1,16 @@
+#6. Последовательность состоит из различных натуральных чисел и завершается числом 0.
+# Определите значение второго по величине элемента в этой последовательности.
+# Гарантируется, что в последовательности есть хотя бы два элемента. (pythontutor.ru, 6 урок, второй максимум)
+lst=int(input())
+firstmax=0
+secmax=0
+while lst!=0:
+
+     if firstmax<lst:
+         secmax=firstmax
+         firstmax=lst
+     elif secmax<lst<firstmax:
+         secmax=lst
+
+     lst=int(input())
+print(secmax)
