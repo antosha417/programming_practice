@@ -2,7 +2,6 @@
 if __name__ == '__main__':
     import turtle
     turtle.shape('turtle')
-    turtle.speed(10)
     for j in range(1, 4):
         for i in range(360):
             turtle.forward(1)
