@@ -1,0 +1,6 @@
+s=list(map(int,input().split()))
+data=list(map(int,input().split()))
+A=set(s)
+B=set(data)
+C=sorted(A&B)
+print(" ".join(map(str,list(C))))
