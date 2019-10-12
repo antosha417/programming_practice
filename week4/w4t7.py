@@ -14,4 +14,4 @@ for i in range(n):
             k += 1
         f = 0
     n_general += n_current
-pritn(k)
+print(k)
