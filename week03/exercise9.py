@@ -18,7 +18,10 @@ n = 3
 while n <= 10:
     angel(n)
     tu.penup()
-    tu.goto()
+    tu.right(90)
+    tu.forward(20)
+    tu.right(-90)
+    tu.backward(15)
     tu.pendown()
     n += 1
 
