@@ -1,4 +1,4 @@
-def duga(fi, R):
+def arc(fi, R):
     import turtle as t
     n = 90
     turn = 360 / n
@@ -11,5 +11,5 @@ n = 3
 R = 300
 dr = R/100
 for i in range(0, n):
-    duga(180, dr)
-    duga(180, dr/5)
+    arc(180, dr)
+    arc(180, dr/5)

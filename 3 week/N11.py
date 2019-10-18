@@ -1,4 +1,4 @@
-def krug(R):
+def circle(R):
     n = 40
     import turtle as t
     fi = 360 / n
@@ -10,7 +10,7 @@ n = 7
 R = 5
 dr = 1
 for i in range(0, n):
-    krug(R + i*dr)
+    circle(R + i*dr)
     t.left(180)
-    krug(R + i*dr)
+    circle(R + i*dr)
     t.left(180)
