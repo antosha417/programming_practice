@@ -14,6 +14,6 @@ turtle.shape('turtle')
 turtle.left(90)
 length = 0
 for i in range(1, 11):
-    l += 0.5
+    length += 0.5
     circle(length, direction = 'left')
     circle(length, direction = 'right')
