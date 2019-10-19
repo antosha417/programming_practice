@@ -3,7 +3,7 @@ def print_string(t,n):
     a.append('Hello')
     for i in range(n):
         a.append(t)
-    print(', '.join([a[i] for i in range(n+1)]))
+    print(', '.join(a))
 
 text=input()
 n=int(input())
