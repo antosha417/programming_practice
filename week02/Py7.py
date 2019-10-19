@@ -1,6 +1,8 @@
 def even_index(a):
-    evenindex=a[::2]
-    print(' '.join([str(elem) for elem in evenindex]))
+    evenindex = []
+    for i in range(0,len(a),2):
+        evenindex.append(a[i])
+    print(' '.join(evenindex))
 
-a=input().split()
+a = input().split()
 even_index(a)
