@@ -2,17 +2,15 @@
 #      N  N  N  N  N  N  Y  N  N  Y  Y  Y  Y  Y
 # a = [6, 7, 4, 4, 2, 2, 8]
 #      N  N  N  Y  N  Y  N
-# a = [5, 8, 2, 8, 5, 0, 9]
+a = [5, 8, 2, 8, 5, 0, 9]
 #      N  N  N  Y  Y  N  N
 n = len(a)
-p = 0
-b = 0
-for i in range(0, n):
-    for k in range(0, i):
-        if a[i] == a[k]:
-            b += 1
-    if b == 0:
-        print ('No')
+b = set()
+for i in range(n):
+    if a[i] in b:
+        print ('Yes')
     else:
-        print('Yes')
-    b = 0
+        print('No')
+        b.add(a[i])
+
+# снова делаешь за квадрат, сохраняй элементы которы видел во множество, это гораздо эфективнее

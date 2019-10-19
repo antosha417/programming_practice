@@ -12,6 +12,6 @@ for i in range(1, n-1):
     b3 = a[i + 1]
     if b1 > b2 and b1 > b3:
         k += 1
-    else:
-        k += 0
 print(k)
+
+# зачем писать else? можно же ничего не писать

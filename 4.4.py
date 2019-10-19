@@ -8,10 +8,14 @@ n = len(a)
 p = 0
 b = []
 for i in range(0, n):
-        for k in range(0, n):
-            if a[i] == a[k]:
-                p += 1
-        if p == 1:
-            b.append(a[i])
-        p = 0
+    for k in range(0, n):
+        if a[i] == a[k]:
+            p += 1
+    if p == 1:
+        b.append(a[i])
+    p = 0
 print(b)
+
+# тут что-то не так с отступами
+# может сделать p булевым?
+# заменить p на булевый нельзя, важно что p += 1 выполняется ровно 1 раз
