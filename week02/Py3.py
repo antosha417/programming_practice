@@ -1,10 +1,10 @@
 def find_min(a,b,c):
-    min =a
-    if b<min:
+    min_elem=a
+    if b<min_elem:
         min=b
-    if c<min:
+    if c<min_elem:
         min=c
-    print(min)
+    print(min_elem)
 a=int(input())
 b=int(input())
 c=int(input())
