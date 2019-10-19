@@ -12,8 +12,8 @@ def circle(n, *, direction):
 
 turtle.shape('turtle')
 turtle.left(90)
-l = 0
+length = 0
 for i in range(1, 11):
     l += 0.5
-    circle(l, direction = 'left')
-    circle(l, direction = 'right')
+    circle(length, direction = 'left')
+    circle(length, direction = 'right')
