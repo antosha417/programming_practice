@@ -4,9 +4,8 @@ text = []
 maximum = 0
 word_max = ''
 for i in range(n):
-    s = list(map(str, input().split()))
-    for j in range(len(s)):
-        text.append(s[j])
+    s = input().split()
+    text += s
 for i in range(len(text)):
     if amount.get(text[i]) is None:
         amount[text[i]] = 1
