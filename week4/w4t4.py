@@ -1,14 +1,11 @@
 n = int(input())
-a = []
+a = {}
 for i in range(n):
-    c = int(input())
-    a.append(c)
-f = 0
-for i in range(n):
-    for j in range(n):
-        if a[i] == a[j] and i != j:
-            f += 1
-    if f == 0:
-        print(a[i])
+    key = str(input())
+    if key in a:
+        a[key] += 1
     else:
-        f = 0
+        a[key] = 1
+for key in a:
+    if a[key] == 1:
+        print(key)
