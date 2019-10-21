@@ -1,11 +1,12 @@
 '''
-Нарисуйте квадрат.
+Дан список чисел. Посчитайте, сколько в нем пар элементов, равных друг другу.
+Считается, что любые два элемента, равные друг другу образуют одну пару, которую необходимо посчитать.
 '''
-import turtle
-turtle.shape('turtle')
 
-n = 4
-while n!= 0:
-    turtle.forward(50)
-    turtle.left(90)
-    n-=1
+a = [int(s) for s in input().split()]
+n = 0
+for i in range(len(a)):
+    for k in range (i+1, len(a)):
+        if a[i] == a[k] and i != k:
+            n += 1
+print(n)

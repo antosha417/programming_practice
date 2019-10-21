@@ -1,14 +1,14 @@
 '''
-Нарисуйте паука с n лапами.
+Во входной строке записана последовательность чисел через пробел.
+Для каждого числа выведите слово YES (в отдельной строке),
+если это число ранее встречалось в последовательности или NO, если не встречалось.
 '''
-import turtle as tu
-tu.shape('turtle')
 
-n = int(input())
-a = 360/n
-while n != 0:
-    tu.forward(50)
-    tu.stamp()
-    tu.backward(50)
-    tu.right(a)
-    n-=1
+a = [int(s) for s in input().split()]
+was = set()
+for n in a:
+    if n in was:
+        print ('YES')
+    else:
+        print ('NO')
+        was.add(n)
