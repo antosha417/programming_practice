@@ -1,11 +1,23 @@
+def sort(dictionary):
+    keys = list(dictionary.keys())
+    dictionary_final = {}
+    keys.sort()
+    for key in keys:
+        dictionary_final[key] = dictionary[key]
+    return dictionary_final
+
+
 n = int(input())
 summary = {}
 for i in range(n):
-    s = input().split()
-    if summary.get(s[0]) is None:
-        summary[s[0]] = {}
-    if summary[s[0]].get(s[1]) is not None:
-        summary[s[0]][s[1]] += int(s[2])
+    customer, item, amount = input().split()
+    if summary.get(customer) is None:
+        summary[customer] = {}
+    if summary[customer].get(item) is not None:
+        summary[customer][item] += int(amount)
     else:
-        summary[s[0]][s[1]] = int(s[2])
-print(summary)
+        summary[customer][item] = int(amount)
+customers = list(summary.keys())
+for customer in customers:
+    print(customer)
+    print(sort(summary[customer]))
