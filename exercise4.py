@@ -1,12 +1,21 @@
-'''
-Дан список. Выведите те его элементы,
-которые встречаются в списке только один раз.
-Элементы нужно выводить в том порядке, в котором они встречаются в списке.
-'''
-
-for i in range(len(a)):
-    for k in range(len(a)):
-        if a[i] == a[k] and i != k :
-            break
-    else:
-        print(a[i])
+what = input()
+if what == 'not main':
+    n = int(input())
+    summ: int = 0
+    for k in range(n):
+        a = input().split()
+        for i in range(len(a)):
+            a[i] = int(a[i])
+        summ += int(a[-k-1])
+        k += 1
+    print(summ)
+else:
+    n = int(input())
+    summ: int = 0
+    for k in range(n):
+        a = input().split()
+        for i in range(len(a)):
+            a[i] = int(a[i])
+        summ += int(a[k])
+        k += 1
+    print(summ)

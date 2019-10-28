@@ -1,12 +1,22 @@
+# надо ли проверять что существует фигура?
 '''
-Дан список чисел. Посчитайте, сколько в нем пар элементов, равных друг другу.
-Считается, что любые два элемента, равные друг другу образуют одну пару, которую необходимо посчитать.
+Напишите функцию, которая в зависимости от выбора пользователя вычисляет площадь круга,
+прямоугольника или треугольника. Для вычисления площади каждой фигуры должна быть написана отдельная функция.
 '''
-
-a = [int(s) for s in input().split()]
-n = 0
-for i in range(len(a)):
-    for k in range (i+1, len(a)):
-        if a[i] == a[k] and i != k:
-            n += 1
-print(n)
+import helpp as h
+print("input the name of figure")
+name = input()
+if name == 'rtiangle':
+    a = int(input())
+    b = int(input())
+    c = float(input())
+    print(h.tr(a, b, c))
+elif name == 'square':
+    a = int(input())
+    b = int(input())
+    print(h.sq(a, b))
+elif name == 'circul':
+    a = int(input())
+    print(h.circul(a))
+else:
+    print('impossible to count')
