@@ -1,4 +1,4 @@
-import matplotlib as mpl
+import matplotlib.pyplot as mpl
 
 
 def f(x):
