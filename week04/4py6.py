@@ -1,11 +1,11 @@
 def was_earlier(row):
     a = set()
     for i in range(len(row)):
-        if int(row[i] in a) == 0:
+        if row[i] in a:
+            print('YES')
+        else:
             a.add(row[i])
             print('NO')
-        else:
-            print('YES')
 
 row = [int(elem) for elem in input().split()]
 was_earlier(row)
