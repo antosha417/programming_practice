@@ -1,1 +1,1 @@
-print(*sorted(set(input().split()) & set(input().split()), key = int))
+print(sorted(set(input().split()) & set(input().split()), key=int))
