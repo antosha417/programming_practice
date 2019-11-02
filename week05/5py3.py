@@ -1,7 +1,7 @@
 from math import pi
 
 
-def square_circle(R, ):
+def square_circle(R):
     return pi * R ** 2
 
 
