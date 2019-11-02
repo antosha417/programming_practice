@@ -8,5 +8,6 @@ def num_single(a):
         if flag > 0:
             print(a[i])
         flag = 1
-arr=[int(s) for s in input().split()]
+
+arr = [int(s) for s in input().split()]
 num_single(arr)
