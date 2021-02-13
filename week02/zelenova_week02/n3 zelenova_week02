@@ -1,0 +1,14 @@
+#3. Даны три числа. Выведите значение наименьшего из них. (pythontutor.ru, 2 урок, минимум из трех чисел)
+print('input first number')
+first = int(input())
+print('input second number')
+second = int(input())
+print('input third number')
+third = int(input())
+print('The smallest number is')
+if first <= second and first <= third:
+    print(first)
+elif second <= first and second <= third:
+    print(second)
+else:
+    print(third)

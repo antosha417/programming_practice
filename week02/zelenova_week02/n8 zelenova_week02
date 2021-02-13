@@ -1,0 +1,8 @@
+#Выведите все четные элементы списка. При этом используйте цикл for, перебирающий элементы списка, а не их индексы!
+#(pythontutor.ru, 7 урок, четные элементы)
+a = [int(s) for s in input().split()]
+evenelm=[]
+for symbol in a:
+    if symbol%2==0:
+       evenelm.append(str(symbol))
+print(' '.join(evenelm))
